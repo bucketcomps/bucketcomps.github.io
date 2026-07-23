@@ -118,6 +118,10 @@ nav a:hover {
   padding-block: clamp(4rem, 10vw, 8rem);
 }
 
+.hero > * {
+  min-width: 0;
+}
+
 .eyebrow,
 .label {
   color: var(--volt);
@@ -142,12 +146,14 @@ h1 {
   line-height: 0.82;
   letter-spacing: -0.075em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .strike {
   position: relative;
   display: inline-block;
   color: var(--void);
+  max-width: 100%;
   text-shadow:
     -1px -1px 0 var(--volt),
     1px -1px 0 var(--volt),
@@ -435,10 +441,6 @@ h2 {
     gap: 0.65rem;
   }
 
-  nav li:first-child {
-    display: none;
-  }
-
   .status-strip,
   .metrics,
   .circuit {
@@ -459,12 +461,22 @@ h2 {
     font-size: 0.8rem;
   }
 
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
   nav ul {
     font-size: 0.78rem;
   }
 
   h1 {
     font-size: clamp(3.3rem, 18vw, 5rem);
+  }
+
+  .strike::after {
+    right: 0;
   }
 
   .status-strip,
