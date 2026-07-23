@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BucketComps is rebuilding games into readable, verifiable, native source—one public-safe milestone at a time.">
+  <meta name="theme-color" content="#0c0d10">
+  <title>BucketComps ⚡ games deserve source code</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <header class="site-header shell">
+    <a class="brand" href="./" aria-label="BucketComps home">
+      <span class="brand-mark" aria-hidden="true">⚡</span>
+      BucketComps
+    </a>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#map">Site map</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="mission" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">preservation lab // public signal</p>
+        <h1 id="hero-title">Games deserve <span class="strike">source code.</span></h1>
+        <p class="lede">BucketComps recovers aging games into readable, verifiable, native builds. The public record stays honest: proof classes remain distinct, holds stay visible, and “playable” means gameplay with working save and load.</p>
+      </div>
+      <aside class="manifesto" aria-label="Program rules">
+        <span class="label">field rules</span>
+        <ol>
+          <li>Bring your own legally obtained game data.</li>
+          <li>No ROMs, keys, or extracted assets in Git.</li>
+          <li>The binary is evidence; recovered source is a hypothesis.</li>
+          <li>Incremental proof beats percentage theater.</li>
+        </ol>
+      </aside>
+    </section>
+
+    <section class="status-strip shell" aria-label="Program status">
+      <div><strong>🟢 one active rebuild</strong><span>inFAMOUS (2009)</span></div>
+      <div><strong>🧪 evidence before claims</strong><span>matched ≠ verified ≠ snapshot-verified</span></div>
+      <div><strong>🔒 public-safe by design</strong><span>static dossiers; isolated live signal</span></div>
+    </section>
+
+    <section class="projects shell" id="projects" aria-labelledby="projects-title">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow">the cabinet</p>
+          <h2 id="projects-title">Active + queued</h2>
+        </div>
+        <p class="section-note">Each game gets its own public repository, voice, theme, and devlog. Shared machinery stays behind the curtain.</p>
+      </header>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="label">⚡ active // PlayStation 3 // 2009</span>
+          <h3>inFAMOUS</h3>
+          <p>A clean-room native PC rebuild focused on two parallel tracks: a readable source recovery and a new graphics consumer. The finish line is verified playable gameplay with save and load—not a screenshot.</p>
+          <div class="tag-row" aria-label="Project themes">
+            <span class="tag">🎮 native rebuild</span>
+            <span class="tag">🧬 source recovery</span>
+            <span class="tag">🖥️ clean-room renderer</span>
+            <span class="tag">💾 save / load</span>
+          </div>
+          <div class="metrics" aria-label="Public progress snapshot dated July 23, 2026">
+            <div class="metric"><strong>4 / 13</strong><small>renderer gates</small></div>
+            <div class="metric"><strong>0</strong><small>verified frames</small></div>
+            <div class="metric"><strong>4 / 34</strong><small>save checks represented</small></div>
+            <div class="metric"><strong>98.1%</strong><small>texture decode</small></div>
+          </div>
+          <div class="actions">
+            <a class="button" href="https://bucketcomps.github.io/infamous/">Open dossier →</a>
+            <a class="button" href="https://github.com/bucketcomps/infamous">Public repo ↗</a>
+            <a class="button live" href="https://live.decomp.deucebucket.com/infamous" aria-label="Proposed live inFAMOUS endpoint; not cut over">📡 proposed live · hold</a>
+          </div>
+        </article>
+
+        <article class="queue-card">
+          <div>
+            <span class="label">🗂️ research queue // no progress claimed</span>
+            <h3>The Simpsons:<br>Hit &amp; Run</h3>
+            <p>The 2003 game already has a native Windows release. A future effort would target maintainable source and modern cross-platform builds—not pretend to invent its first PC port.</p>
+          </div>
+          <p class="tag">status: source-recovery research queue</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="architecture shell" id="map" aria-labelledby="map-title">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow">routing diagram</p>
+          <h2 id="map-title">What lives where</h2>
+        </div>
+        <p class="section-note">A small public surface is a feature. Private evidence never becomes a web root.</p>
+      </header>
+      <div class="circuit">
+        <article>
+          <span class="label">01 // program</span>
+          <h3>🏚️ This landing page</h3>
+          <p>The cross-project map: mission, active cabinets, honest headline numbers, and public links.</p>
+        </article>
+        <article>
+          <span class="label">02 // dossiers</span>
+          <h3>📓 One repo per game</h3>
+          <p>Static project devlogs, methods, proof vocabulary, milestones, and game-specific visual identity.</p>
+        </article>
+        <article>
+          <span class="label">03 // live</span>
+          <h3>📡 Local sanitized relay</h3>
+          <p>Dynamic telemetry stays locally generated and separately hosted. Static sites link to it but never ingest it at build time.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <span>BucketComps · preservation with receipts · snapshot 2026-07-23</span>
+    <span><a href="https://github.com/bucketcomps">GitHub organization ↗</a> · CC0 site source</span>
+  </footer>
+</body>
+</html>
