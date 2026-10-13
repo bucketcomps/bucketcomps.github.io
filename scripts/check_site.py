@@ -49,6 +49,14 @@ SECRET_PATTERNS = (
     re.compile(r"gh[opsu]_[A-Za-z0-9]{20,}"),
     re.compile(r"sk-[A-Za-z0-9_-]{20,}"),
 )
+# Recipe drop guard: prevent opcodes, register names, hex addresses, probe how-tos, formulas
+FORBIDDEN_RECIPE_PATTERNS = (
+    re.compile(r"\b0x[0-9a-fA-F]{6,8}\b"),  # Addresses like 0x0044b708 or 0x00xxxxxx
+    re.compile(r"\b0x[fF][0-9a-fA-F]{3}\b"),  # Opcodes like 0xF006
+    re.compile(r"\b(?:formula|probe\s+how-to|dump\s+guide|how\s+to\s+probe)\b", re.IGNORECASE),
+    re.compile(r"\b(?:GPR\d+|FPR\d+|SPRG\d+|XER|LR|CTR|CR\d)\b"),  # Hardware registers
+)
+
 
 
 class Links(HTMLParser):
@@ -106,7 +114,12 @@ def main() -> int:
         for pattern in SECRET_PATTERNS:
             if pattern.search(text):
                 fail(f"secret-like token in {path.relative_to(ROOT)}")
+        for pattern in FORBIDDEN_RECIPE_PATTERNS:
+            match = pattern.search(text)
+            if match:
+                fail(f"forbidden recipe / technical leak pattern {match.group(0)!r} in {path.relative_to(ROOT)}")
         if path.suffix == ".html":
+
             parser = Links()
             parser.feed(text)
             parsers[path] = parser
