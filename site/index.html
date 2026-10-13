@@ -18,7 +18,7 @@
     </a>
     <nav class="primary-nav" aria-label="Primary navigation">
       <ul>
-        <li><a href="#atlas">Hardware Atlas</a></li>
+        <li><a href="#atlas">PS3 Atlas</a></li>
         <li><a href="#projects">Status Board</a></li>
         <li><a href="#principles">Proof Standards</a></li>
         <li><a href="#blueprint">Architecture</a></li>
@@ -79,15 +79,16 @@
       <div class="atlas-card">
         <div class="atlas-header">
           <div>
-            <span class="label">empirical hardware verification</span>
-            <h2 class="atlas-title" id="atlas-title">PS3 Hardware Atlas</h2>
-            <p class="atlas-desc">Our internal hardware measurement atlas records timing and execution behavior directly across real retail consoles. It grounds our CPU interpreter, graphics pipelines, and timing models in empirical reality.</p>
+            <span class="label">hardware + code knowledge base</span>
+            <h2 class="atlas-title" id="atlas-title">PS3 Atlas</h2>
+            <p class="atlas-desc">One private atlas, two halves: <strong>hardware</strong>, measurements taken directly on real retail consoles that ground our CPU, coprocessor and graphics work; and <strong>code</strong>, PS3 function names recovered with evidence from reference builds, plus fingerprints for recognising the same code across games.</p>
           </div>
           <div class="atlas-notice">
-            <span>MEASUREMENTS AS OF 2026-10-13 · DATA STAYS PRIVATE</span>
+            <span>AS OF 2026-10-13 · DATA STAYS PRIVATE</span>
           </div>
         </div>
 
+        <h3 class="atlas-subhead">Hardware</h3>
         <div class="atlas-grid">
           <div class="atlas-stat">
             <div class="atlas-stat-num">42,250,048</div>
@@ -108,6 +109,25 @@
             <div class="atlas-stat-num">3</div>
             <div class="atlas-stat-label">Retail Consoles Measured</div>
             <div class="atlas-stat-sub">Three separate hardware revisions cross-checked</div>
+          </div>
+        </div>
+
+        <h3 class="atlas-subhead">Code</h3>
+        <div class="atlas-grid">
+          <div class="atlas-stat">
+            <div class="atlas-stat-num">62,876</div>
+            <div class="atlas-stat-label">Function Names Recovered</div>
+            <div class="atlas-stat-sub">Each with its evidence (symbol table, type info, strings or logs)</div>
+          </div>
+          <div class="atlas-stat">
+            <div class="atlas-stat-num">364,800</div>
+            <div class="atlas-stat-label">Function Fingerprints</div>
+            <div class="atlas-stat-sub">For matching the same code across PS3 games</div>
+          </div>
+          <div class="atlas-stat">
+            <div class="atlas-stat-num">10</div>
+            <div class="atlas-stat-label">Reference Titles &amp; Engines</div>
+            <div class="atlas-stat-sub">Multiple builds of several</div>
           </div>
         </div>
       </div>
