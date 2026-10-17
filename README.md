@@ -4,7 +4,7 @@ This repository is the public, static front door for the BucketComps
 preservation program.
 
 - Default Pages URL: <https://bucketcomps.github.io/>
-- Eventual custom URL: `https://decomp.deucebucket.com/`
+- Platform: <https://decomp.deucebucket.com/>
 - Project dossiers: one public repository per game
 - Live dashboards: locally hosted behind a separate, explicit live hostname
 
